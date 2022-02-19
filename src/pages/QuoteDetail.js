@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { Outlet } from 'react-router-dom';
 
 const QuoteDetail = () => {
   return (
-    <div>QuoteDetail</div>
-  )
-}
+    <section>
+      <h1>Quote Detaitl Page --> /quotes/first/OUTLET</h1>
+      <Outlet />
+    </section>
+  );
+};
 
-export default QuoteDetail
+export default QuoteDetail;
