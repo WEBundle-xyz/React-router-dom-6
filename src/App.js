@@ -8,18 +8,18 @@ import PageNotFound from './components/UI/PageNotFound';
 
 function App() {
   const params = useParams();
-  console.log(params.quoteId);
+  console.log(params.userId);
 
   return (
     <div>
       <Routes>
-        <Route path='/*' element={<PageNotFound />}></Route>
-        <Route path='/quotes/*' element={<PageNotFound />}></Route>
+        {/* <Route path='/*' element={<PageNotFound />}></Route>
+        <Route path='/quotes/*' element={<PageNotFound />}></Route> */}
         <Route path='/' element={<Navigate replace to='/quotes' />}></Route>
-        <Route path='/quotes' element={<AllQuotes />}></Route>
-        <Route path='/new-quote' element={<NewQuote />}></Route>
-        <Route path='/quotes/' element={<QuoteDetail />}>
-          <Route path={'/quotes/comments'} element={<Comments />}></Route>
+        <Route path='quotes' element={<AllQuotes />}></Route>
+        <Route path='new-quote' element={<NewQuote />}></Route>
+        <Route path={`quotes/:userId/*`} element={<QuoteDetail />}>
+          <Route path='comments' element={<Comments />}></Route>
         </Route>
       </Routes>
     </div>
