@@ -10,7 +10,7 @@
 
 [4 - Added form to add new quotes ](../../tree/c0677453bfd6bde7e63c79dde6841565a4dff4c5/)
 
-[5 - Empty ](../../tree//)
+[5 - Added contact page ](../../tree//)
 
 [6 - Empty ](../../tree//)
 

@@ -1,4 +1,4 @@
-import { Route, Routes, Navigate } from 'react-router-dom';
+import { Route, Routes, Navigate, useParams } from 'react-router-dom';
 
 import AllQuotes from './pages/AllQuotes';
 import NewQuote from './pages/NewQuote';
@@ -9,8 +9,8 @@ import Layout from './components/layout/Layout';
 import Contact from './components/contact/Contact';
 
 function App() {
-  // const params = useParams();
-  // console.log(params.userId);
+  const params = useParams();
+  console.log(params.id);
 
   return (
     <Layout>
@@ -21,7 +21,7 @@ function App() {
         <Route path='/quotes' element={<AllQuotes />}></Route>
         <Route path='/new-quote' element={<NewQuote />}></Route>
         <Route path='/contact' element={<Contact />}></Route>
-        <Route path='/quotes/:userId/*' element={<QuoteDetail />}>
+        <Route path='/quotes/:id/*' element={<QuoteDetail />}>
           <Route path='comments' element={<Comments />}></Route>
         </Route>
       </Routes>

@@ -9,7 +9,7 @@ const QuoteDetail = () => {
       <div>
         <h1>The userId is: {params.userId}</h1>
         <p style={{ color: 'red', marginLeft: '6rem', fontSize: '4rem' }}>
-          {params.userId}
+          {params.id}
         </p>
       </div>
       <Outlet />
