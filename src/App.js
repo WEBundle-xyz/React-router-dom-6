@@ -9,8 +9,8 @@ import Layout from './components/layout/Layout';
 import Contact from './components/contact/Contact';
 
 function App() {
-  const params = useParams();
-  console.log(params.id);
+  let params = useParams();
+  console.log(params.userId);
 
   return (
     <Layout>
@@ -18,7 +18,7 @@ function App() {
         <Route path='/' element={<Navigate replace to='/quotes' />}></Route>
         <Route path='*' element={<PageNotFound />}></Route>
         <Route path='/quotes' element={<AllQuotes />}></Route>
-        <Route path='/quotes/:userId' element={<QuoteDetail />}>
+        <Route path='/quotes/:userId/' element={<QuoteDetail />}>
           <Route path='comments' element={<Comments />}></Route>
         </Route>
         <Route path='/new-quote' element={<NewQuote />}></Route>
