@@ -1,4 +1,4 @@
-import { Route, Routes, Navigate, useParams } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 
 import AllQuotes from './pages/AllQuotes';
 import NewQuote from './pages/NewQuote';
@@ -9,8 +9,8 @@ import Layout from './components/layout/Layout';
 import Contact from './components/contact/Contact';
 
 function App() {
-  const params = useParams();
-  console.log(params.userId);
+  // const params = useParams();
+  // console.log(params.userId);
 
   return (
     <Layout>
