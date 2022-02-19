@@ -15,15 +15,14 @@ function App() {
   return (
     <Layout>
       <Routes>
-        <Route path='/*' element={<PageNotFound />}></Route>
-        <Route path='/quotes/*' element={<PageNotFound />}></Route>
         <Route path='/' element={<Navigate replace to='/quotes' />}></Route>
+        <Route path='*' element={<PageNotFound />}></Route>
         <Route path='/quotes' element={<AllQuotes />}></Route>
-        <Route path='/new-quote' element={<NewQuote />}></Route>
-        <Route path='/contact' element={<Contact />}></Route>
-        <Route path='/quotes/:id/*' element={<QuoteDetail />}>
+        <Route path='/quotes/:userId' element={<QuoteDetail />}>
           <Route path='comments' element={<Comments />}></Route>
         </Route>
+        <Route path='/new-quote' element={<NewQuote />}></Route>
+        <Route path='/contact' element={<Contact />}></Route>
       </Routes>
     </Layout>
   );
