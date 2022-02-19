@@ -27,11 +27,11 @@
 
 .nav a {
   text-decoration: none;
-  color: #88dfdf;
+  color:#263238;
 }
 
 .nav a:hover,
 .nav a:active,
 .nav a.active {
-  color: #e6fcfc;
+  color: #ff8a65;
 }
