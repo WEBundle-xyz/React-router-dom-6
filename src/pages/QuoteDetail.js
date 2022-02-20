@@ -1,6 +1,7 @@
 import React from 'react';
-import { useParams, Outlet, Link } from 'react-router-dom';
+import { Routes, Route, useParams, Link } from 'react-router-dom';
 
+import Comments from '../components/comments/Comments';
 import HighlightedQuote from '../components/quotes/HighlightedQuote';
 
 const DUMMY_DATA = [
@@ -44,7 +45,12 @@ const QuoteDetail = () => {
           {params.userId}
         </p>
       </div>
-      <Outlet />
+      <Routes>
+        <Route
+          path={`${params.userId}/comments`}
+          element={<Comments />}
+        ></Route>
+      </Routes>
     </section>
   );
 };
