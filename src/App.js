@@ -19,7 +19,10 @@ function App() {
         <Route path='*' element={<PageNotFound />}></Route>
         <Route path='/quotes' element={<AllQuotes />}></Route>
         <Route path='/quotes/:userId/' element={<QuoteDetail />}>
-          <Route path='comments' element={<Comments />}></Route>
+          <Route
+            path={`quotes/${params.userId}/comments`}
+            element={<Comments />}
+          ></Route>
         </Route>
         <Route path='/new-quote' element={<NewQuote />}></Route>
         <Route path='/contact' element={<Contact />}></Route>
