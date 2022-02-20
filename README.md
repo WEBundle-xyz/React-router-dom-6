@@ -14,4 +14,10 @@
 
 [6 - Outputing data on the detail page ](../../tree/ec0947c13594e6c6e2849ad0ff4db7442e894d27/)
 
-[7 - Empty ](../../tree//)
+[7 - Prgramatic navigation by using useNavigation ](../../tree/5a939d47b7585a8fccc3d0efaa0e47a8c140d5ca/)
+
+[8 - Empty ](../../tree//)
+
+[9 - Empty ](../../tree//)
+
+[10 - Empty ](../../tree//)
