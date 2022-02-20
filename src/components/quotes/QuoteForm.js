@@ -45,7 +45,7 @@ const QuoteForm = (props) => {
         </div>
         <div className={classes.actions}>
           <button className='btn'>Add Quote</button>
-          <button onClick={cancelAddNewQuoteHandler}>Cancel</button>
+          <button className='btn--flat' onClick={cancelAddNewQuoteHandler}>Cancel</button>
         </div>
       </form>
     </Card>

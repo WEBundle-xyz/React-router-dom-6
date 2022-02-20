@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, Outlet } from 'react-router-dom';
+import { useParams, Outlet, Link } from 'react-router-dom';
 
 import HighlightedQuote from '../components/quotes/HighlightedQuote';
 
@@ -33,6 +33,11 @@ const QuoteDetail = () => {
   return (
     <section>
       <HighlightedQuote text={quote.text} author={quote.author} />
+      <div className='centered'>
+        <Link className='btn--flat' to={`${params.userId}/comments`}>
+          Load Comments
+        </Link>
+      </div>
       <div>
         <h1>The userId is: {params.userId}</h1>
         <p style={{ color: 'red', marginLeft: '6rem', fontSize: '4rem' }}>

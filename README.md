@@ -16,7 +16,7 @@
 
 [7 - Prgramatic navigation by using useNavigation ](../../tree/5a939d47b7585a8fccc3d0efaa0e47a8c140d5ca/)
 
-[8 - Empty ](../../tree//)
+[8 - Working with query params ](../../tree/769ff906b18bd76610dc0f56d9b047bc2009a4f6/)
 
 [9 - Empty ](../../tree//)
 
