@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import Card from '../UI/Card';
 import LoadingSpinner from '../UI/LoadingSpinner';
@@ -7,6 +8,12 @@ import classes from './QuoteForm.module.css';
 const QuoteForm = (props) => {
   const authorInputRef = useRef();
   const textInputRef = useRef();
+
+  const navigate = useNavigate();
+
+  const cancelAddNewQuoteHandler = () => {
+    navigate('/quotes', { replace: true });
+  };
 
   function submitFormHandler(event) {
     event.preventDefault();
@@ -38,6 +45,7 @@ const QuoteForm = (props) => {
         </div>
         <div className={classes.actions}>
           <button className='btn'>Add Quote</button>
+          <button onClick={cancelAddNewQuoteHandler}>Cancel</button>
         </div>
       </form>
     </Card>

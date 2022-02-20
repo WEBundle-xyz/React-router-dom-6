@@ -12,6 +12,6 @@
 
 [5 - Added contact page ](../../tree//)
 
-[6 - Empty ](../../tree//)
+[6 - Outputing data on the detail page ](../../tree/ec0947c13594e6c6e2849ad0ff4db7442e894d27/)
 
 [7 - Empty ](../../tree//)
