@@ -17,7 +17,7 @@ function App() {
         <Route path='/' element={<Navigate replace to='/quotes' />}></Route>
         <Route path='*' element={<PageNotFound />}></Route>
         <Route path='/quotes' element={<AllQuotes />}></Route>
-        <Route path='/quotes/:userId/*' element={<QuoteDetail />}></Route>
+        <Route path='/quotes/:quoteId/*' element={<QuoteDetail />}></Route>
         <Route path='/new-quote' element={<NewQuote />}></Route>
         <Route path='/contact' element={<Contact />}></Route>
       </Routes>

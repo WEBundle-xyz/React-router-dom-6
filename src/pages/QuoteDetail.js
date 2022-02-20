@@ -25,7 +25,7 @@ const DUMMY_DATA = [
 const QuoteDetail = () => {
   const params = useParams();
 
-  const quote = DUMMY_DATA.find((quote) => quote.id === params.userId);
+  const quote = DUMMY_DATA.find((quote) => quote.id === params.quoteId);
 
   if (!quote) {
     return <p>No quote found</p>;
@@ -35,16 +35,16 @@ const QuoteDetail = () => {
     <section>
       <HighlightedQuote text={quote.text} author={quote.author} />
       <div className='centered'>
-        <Link className='btn--flat' to={`${params.userId}/comments`}>
+        <Link className='btn-flat' to={`${params.quoteId}/comments`}>
           Load Comments
         </Link>
       </div>
       <div>
-        <h1>The userId is: {params.userId}</h1>
+        <h1>The userId is: {params.quoteId}</h1>
       </div>
       <Routes>
         <Route
-          path={`${params.userId}/comments`}
+          path={`${params.quoteId}/comments`}
           element={<Comments />}
         ></Route>
       </Routes>
